@@ -1,8 +1,10 @@
 package com.informatica.unipr.provaesame;
 
 import android.app.ActionBar;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,6 +23,8 @@ public class recuperoPassword extends AppCompatActivity {
 
 
     Button inviaRichiestabottone;
+
+    String mEmail;
 
     EditText inputDomanda;
     EditText inputRisposta;
@@ -73,6 +77,10 @@ public class recuperoPassword extends AppCompatActivity {
                             return;
                         }
                         Toast.makeText(recuperoPassword.this, "Richiesta inviata", Toast.LENGTH_SHORT).show();
+                        //prende l'email
+                        mEmail= response.getString("email");
+                        inviaEmail();
+                        Log.d("we", mEmail);
                     } catch (Exception e) {
                         e.printStackTrace();
                         Toast.makeText(recuperoPassword.this, "Error to save account data", Toast.LENGTH_SHORT).show();
@@ -92,8 +100,18 @@ public class recuperoPassword extends AppCompatActivity {
                     DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
 
             queue.add(inviaRequest);
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void inviaEmail(){
+        Log.d("aiuto", mEmail);
+
+        Intent intent= new Intent(getApplicationContext(),recuperoPassword2.class);
+        intent.putExtra("email",  mEmail);
+        startActivity(intent);
     }
 }
