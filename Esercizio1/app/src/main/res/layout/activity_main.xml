@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.utente.esercizio1.MainActivity">
+
+    <TextView
+        android:id="@+id/Intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/label_Intro"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.5"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="114dp">
+
+
+        <TextView
+            android:id="@+id/labelTry"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/input_number"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/numberView"
+            android:layout_width="53dp"
+            android:layout_height="56dp"
+            android:layout_weight="0.2"
+            android:ems="10"
+            android:inputType="numberSigned" />
+
+
+        <Button
+            android:id="@+id/tryAction"
+            android:layout_width="58dp"
+            android:layout_height="56dp"
+            android:layout_weight="0.4"
+            android:text="@string/labelTryButton" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/gameResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Esercizio1 - Guess The Number</string>
+
+    <string name="label_Intro">Indovina il numero corretto da 1 a 20</string>
+
+    <string name="label_input"/>
+
+    <string name="labelTryButton">PROVA</string>
+
+    <string name="input_number">Inserire un numero</string>
+
+    <string name="title_activity_show_result">ShowResult</string>
+
+    <string name="logo">logo</string>
+
+    <string name="label_logo">logo</string>
+
+    <string name="label_result">COMPLIMENTI!!!</string>
+</resources>

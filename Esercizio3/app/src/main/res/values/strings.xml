@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Esercizio 3</string>
+
+    <string name="login_failed">Login Failed</string>
+    <string name="prompt_username" translatable="false">Username</string>
+    <string name="prompt_password" translatable="false">Password</string>
+    <string name="action_sign_in" translatable="false">Log in</string>
+
+    <string name="error_field_required">Questo campo è necessario</string>
+    <string name="error_invalid_password">Password non valida</string>
+    <string name="error_invalid_username">Username non valido</string>
+
+    <string name="account_name" translatable="false">Name</string>
+    <string name="account_phone" translatable="false">Phone</string>
+    <string name="account_create" translatable="false">Crea</string>
+
+    <string name="menu_create" translatable="false">Name</string>
+    <string name="menu_save" translatable="false">Phone</string>
+    <string name="menu_delete" translatable="false">Crea</string>
+</resources>

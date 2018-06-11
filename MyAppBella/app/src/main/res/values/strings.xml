@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MyAppBella</string>
+    <string name="prompt_username" translatable="false">Username</string>
+    <string name="prompt_password" translatable="false">Password</string>
+    <string name="action_sign_in" translatable="false">Log in</string>
+    <string name="menu_delete">cancella</string>
+    <string name="menu_save">nuovo account</string>
+    <string name="action_favorite">azioni_preferite</string>
+    <string name="action_settings">azioni</string>
+    <string name="lorem_ipsum">lorem_ipsum</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

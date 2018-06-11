@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="it.frametech.unipr">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="it.frametech.unipr.LoginActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="it.frametech.unipr.CreateAccountActivity"/>
+        <activity android:name="it.frametech.unipr.CreateAccountBoundActivity"/>
+        <activity android:name="it.frametech.unipr.CreateAccountJobActivity"/>
+        <activity android:name="it.frametech.unipr.CreateAccountMsgActivity"/>
+
+        <service android:name=".CreateAccountService" ></service>
+        <service android:name=".CreateAccountBoundService" ></service>
+        <service android:name=".CreateAccountMsgService" ></service>
+
+        <service
+            android:name=".CreateAccountJobService"
+            android:label="Create Account Job"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+
+        </service>
+
+    </application>
+
+</manifest>
